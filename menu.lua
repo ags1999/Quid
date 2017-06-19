@@ -19,7 +19,9 @@ local function checkPoint(botao,x,y)
 end
 
 function menu.mousepressed(x,y,but)
-	if checkPoint(botaoStart,x,y) and but == 1 then
+  
+  
+	if checkPoint(botaoStart,x,y) then
 		love.changeToGame()
 	end
 end
